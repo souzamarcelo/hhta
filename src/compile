@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+rm runner >> /dev/null;
+rm -r build >> /dev/null;
+mkdir build >> /dev/null;
+cd build >> /dev/null;
+cmake .. >> /dev/null;
+make runner >> /dev/null;
+cp runner .. >> /dev/null;
+cd .. >> /dev/null;
+rm -r build >> /dev/null;
